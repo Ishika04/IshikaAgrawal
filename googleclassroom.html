@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale=1" />
+
+    <title>Main Page</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="styles/theme1.css" media="all"/> -->
+
+    <link rel="stylesheet" type="text/css" href="styles/theme2.css" media="all"/>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href = "index.html"> Work </a></li>
+                <li><a href="resume.html"> Resume </a></li>
+                <li><a href = "about.html"> About </a></li>
+            </ul>
+        </nav>
+
+        <h4> Ishika Agrawal </h4>
+
+        <div class = "contact_info">
+            <a href="https://www.linkedin.com/in/agrawal-ishika" target="_blank">
+                <img src="images/linkedin.png" alt = "LinkedIn">
+            </a>
+            <a href="mailto:ia83@cornell.edu" target="_blank">
+                <img src = "images/email.png" alt = "Email" >
+            </a>
+            <a href="https://medium.com/@ishikaagrawal04" target="_blank">
+                <img src = "images/medium.png" alt = "Medium" >
+            </a>
+        </div>
+    </header>
+
+<main>
+<div class = "gc">
+    <div class="about_me">
+        <h1> Google Classroom For All Learners: A UX Case Study </h1>
+    </div>
+
+    <p> This last summer, like millions of other students across the globe, my school was rapidly forced to adapt to virtual environments due to COVID-19. For my younger sister and many of the other students I tutor, Google Classroom replaced a traditional classroom and became the primary form of communication between teachers and students. </p>
+
+    <p> Google Classroom allows students to organize their assignments for class by keeping track of due dates, overall completion, grades, and feedback. However, it is difficult to use because: </p>
+    <ol>
+        <li> The assignment stream is cluttered. </li>
+        <li> It is tedious to coordinate assignment organization across multiple platforms. </li>
+    </ol>
+
+    <div class="study_headings">
+        <h2> Understanding Why The Assignment Stream Doesn’t Work </h2>
+    </div>
+
+    <p> Going into this, my original hypothesis was: Since the Google Classroom classwork tab helps keep assignments organized by topic, students will easily be able to organize assignments. Instead, students need a better way to keep track of grades and feedback across all of their classes. </p>
+
+    <h3> User Research </h3>
+    <p> Interviewing 7 high school students whose classroom interactions have been primarily through Google Classroom during COVID - 19, I reached three key insights: </p>
+    <ol>
+        <li> Schools use platforms outside of Google Classroom such as Genesis to keep track of grades and feedback. Only 29% of interviewees felt they would use the same features if adapted to Google Classroom. </li>
+        <li> 86% of students find it tedious to search for assignments in the assignment stream (“It's annoying that assignments that are due soon get buried between assignments that were posted recently.”) </li>
+        <li> Users don’t always like the way teachers organize assignments in the classwork tab or the Google Classroom to-do list and often reorganize their assignments in a personal planner or excel sheet </li>
+    </ol>
+
+    <h3> Market Research </h3>
+    <p> Google Classroom is unique in that it provides students with a to-do list feature in addition to a calendar feature that allows users to visualize their assignments in both checklist format and as a visual schedule. Unlike other products though, Google Classroom does not organize its assignment stream into modules or by date. </p>
+
+    <div class="study_headings">
+        <h2> Users Want to Personalize Their Google Classroom </h2>
+    </div>
+    <p> Users like to organize their assignments in several different ways. Some like to color code, plan by day, prioritize, estimate completion times, set multiple reminders, and add notes. The current Google Classroom format does not allow for this type of personalization. Teachers and Google Classroom have preset organizational patterns that users must adopt. </p>
+
+    <div class="study_headings">
+        <h2> Finding Feature Spaces </h2>
+    </div>
+
+    <p> After brainstorming, we identified two key opportunities: </p>
+    <ol>
+        <li> How might we integrate assignment organization across multiple subjects? </li>
+        <li> How might we personalize the assignment stream based on the user’s needs? </li>
+    </ol>
+
+    <div class="study_headings">
+        <h2> Solution Spaces </h2>
+    </div>
+    <p> After analyzing the feasibility and impact of the solutions from the brainstorming session, I drew some initial flows. Each flow shows a potential feature and how the user might interact with the feature. </p>
+    <h3> Solution 1: Grading Tab: </h3>
+    <p> The grading tab allow users to see a summary of their grades, assignments, and feedback from teachers all in one place. </p>
+
+    <h3> Solution 2: Assignment Breakdown </h3>
+    <p> The assignment breakdown feature allows users to plan their assignments by accessing a few tools such as setting alerts and prioritizing tasks. </p>
+    <h3> Solution 3: Workspaces </h3>
+    <p> Workspaces allow users to group and sort assignments across all of their classes. </p>
+
+    <div class="study_headings">
+        <h2> Picking A Solution </h2>
+    </div>
+    <h3> Initial Approach </h3>
+    <p> I spent my first iteration discovering ways in which users could integrate assignments across classes by grouping them together into workspaces. To test my approach, I designed a prototype. </p>
+    <figure>
+        <img src = "images/pro1.png"
+        alt = "Workspaces" >
+        <!-- Source: (original work) Ishika Agrawal -->
+        <img src = "images/pro2.png"
+        alt = "Workspaces" >
+        <!-- Source: (original work) Ishika Agrawal -->
+    </figure>
+    <p> What I found is that users faced some of the same challenges in using the prototype as they did in using the class stream. Users did not like scrolling through their stream to find assignments and announcements to add to their workspace folder. Users also felt that this was not a tool they could use daily since it required more time to create than simply using a planner and was instead something they might reserve for large projects. </p>
+    <p> Instead of finding ways of integrating assignment organization across classes, I decided to focus on making it as convenient as possible to organize assignments within one class and making it easier to use the assignment stream. </p>
+
+    <h3> Final Approach </h3>
+    <p> Users already have strong preferences for how they like to organize their assignments outside of Google Classroom. I decided to help personalize the assignment stream by creating a tool that allows users to access those same features within the Google Classroom platform. </p>
+    <p> Initially, I created the Assignment Breakdown feature which allows students to color code assignments, prioritize, make personal notes, add tags, and set reminders within each individual assignment. However, most users do not spend much time on the individual assignment page and primarily use it for submitting assignments. </p>
+    <p> From the initial workspace testing design, users liked the idea of organizing their assignment in different ways such as by due date and by isolating assignments and announcements. To incorporate this in the assignment stream tab, I created a filter tool that allows users to filter by pre-set categories or based on what settings they decide to use in the Assignment Breakdown tool. </p>
+    <figure>
+        <img src = "images/final1.png"
+        alt = "Assignment Breakdown Feature" >
+        <!-- Source: (original work) Ishika Agrawal -->
+        <img src = "images/final2.png"
+        alt = "Assignment Breakdown Feature" >
+        <!-- Source: (original work) Ishika Agrawal -->
+    </figure>
+</div>
+</main>
+
+<footer> If you're looking to connect, feel free to email me at ia83@cornell.edu. </footer>
+
+
+</body>
+
+</html>
