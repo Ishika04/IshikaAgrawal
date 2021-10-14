@@ -257,10 +257,10 @@ header nav a:visited {
 }
 
 .hidden:hover {
-  position: absolute;
+/*   position: absolute;
   top: 40%;
   left: 200px;
-  background-color: white;
+  background-color: white; */
   transform: translate(-50%, -50%);
 }
 
