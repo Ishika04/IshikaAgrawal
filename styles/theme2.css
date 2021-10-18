@@ -2,6 +2,10 @@ hr {
     margin-top: 20px;
 }
 
+.description {
+    max-width: 100%;
+}
+
 video {
     display: block;
     margin: 0 auto;
