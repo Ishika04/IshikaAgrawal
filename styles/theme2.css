@@ -6,6 +6,18 @@ hr {
     max-width: 100%;
 }
 
+.description h1 {
+    max-midth: 100%;
+}
+
+.description h4 {
+    max-midth: 100%;
+}
+
+.description p {
+    max-midth: 100%;
+}
+
 h1 {
     background-color: transparent;
 }
