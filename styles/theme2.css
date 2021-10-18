@@ -37,6 +37,8 @@ body {
 
 html {
     scroll-behavior: smooth;
+    max-width: 1400px;
+    margin: auto;
 }
 
 main {
