@@ -1198,7 +1198,6 @@ header img {
 
 @media screen and (min-width: 1400px) {
     .description {
-        position: absolute;
         max-width: 90%;
 }
 
