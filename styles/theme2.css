@@ -6,6 +6,10 @@ hr {
     max-width: 100%;
 }
 
+h1 {
+    background-color: none;
+}
+
 video {
     display: block;
     margin: 0 auto;
