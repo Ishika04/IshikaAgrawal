@@ -12,122 +12,511 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href = "index.html"> Work </a></li>
-                <li><a href="resume.html"> Resume </a></li>
-                <li><a href = "about.html"> About </a></li>
-            </ul>
-        </nav>
+    <div id="cover_ishika">
 
-        <h4> Ishika Agrawal </h4>
-
-        <div class = "contact_info">
-            <a href="https://www.linkedin.com/in/agrawal-ishika" target="_blank">
-                <img src="images/linkedin.png" alt = "LinkedIn">
-            </a>
-            <a href="mailto:ia83@cornell.edu" target="_blank">
-                <img src = "images/email.png" alt = "Email" >
-            </a>
-            <a href="https://medium.com/@ishikaagrawal04" target="_blank">
-                <img src = "images/medium.png" alt = "Medium" >
-            </a>
+        <div class="cover">
+            <img src = "images/ishika.jpg" alt = "Cover Pic" class="image" width="275"/>
         </div>
-    </header>
 
-<main>
-<div class = "gc">
-    <div class="about_me">
-        <h1> Google Classroom For All Learners: A UX Case Study </h1>
+        <div class="description">
+            <h1> Ishika Agrawal </h1>
+            <h4>Cornell '23 | BA Information Science </h4>
+            <p> I love listening to people’s stories, solving problems, and creating beautiful things that matter.</p>
+
+                <div class = "contact_info">
+                    <a href="https://www.linkedin.com/in/agrawal-ishika" target="_blank">
+                        <img src="images/linkedin.png" alt = "LinkedIn">
+                    </a>
+                    <a href="mailto:ia83@cornell.edu" target="_blank">
+                        <img src = "images/email.png" alt = "Email" >
+                    </a>
+                    <a href="https://medium.com/@ishikaagrawal04" target="_blank">
+                        <img src = "images/medium.png" alt = "Medium" >
+                    </a>
+                </div>
+                <hr>
+
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a href = "index.html" style="text-decoration: 7px underline #e9bfbf;"> Work </a></li>
+                            <li><a href = "about.html"> About </a></li>
+                            <!-- <li><a href="https://drive.google.com/file/d/1H5s5kvupf6gSBKSc4Urv1ZKIP9Ajvg0K/view?usp=sharing"> Resume </a></li> -->
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href = "index.html"> Work </a></li>
+                                    <li><a href = "about.html"> About </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </div> 
+
+    
+    <div class="page-main">
+    <div class="case-study google">
+        <div class="header">
+            <img src = "images/gc_cover.jpg" alt = "Cover Pic" class="image"/>
+        </div>
+
+        <div class="jump-to">
+            <h3>Jump To:</h3>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href = "#story"> Context </a>
+                        <li><a href = "#why-gc-background"> Why Google Classroom </a></li>
+                        <li><a href = "#user-research"> User Research </a></li>
+                        <li><a href = "#people-problem"> The People Problem </a></li>
+                        <li><a href = "#personas"> Personas </a></li>
+                        <li><a href = "#brainstorming"> Brainstorming </a></li>
+                        <li><a href = "#student-side"> Designing for the Student </a></li>
+                        <li><a href = "#designing-for-the-teacher"> Designing for the Teacher </a></li>
+                        <li><a href = "#conclusion"> Conclusion </a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div id="story">
+            <h2> CONTEXT </h2>
+            <p>This March, my university switched to remote learning as a result of the pandemic. As a college 
+                student, though the transition to fully online learning wasn’t ideal, it was still relatively 
+                smooth.
+            </p>
+        
+            <p>However, for my younger sister, a highly motivated, straight-A high school student, the transition
+                 was a struggle. She was constantly overwhelmed with notifications, missed assignment deadlines,
+                  and found it difficult to communicate with her teachers. As I talked with her friends and other 
+                  students, I realized everyone else was struggling too.
+            </p>
+        
+            <p> Before the pandemic, teachers could easily support students in the classroom — they could 
+                customize an assignment on the fly to fit their students needs or give reminders about upcoming 
+                events to make sure everyone was on track. <em> Now, students have a lot less support than they’re 
+                used to. </em> It’s up to them to wade through an average of <strong>30+</strong> Google Classroom notifications a 
+                day to find that one reminder, shoot that first email when they’re falling behind, and keep 
+                themselves organized. <em>To solve this problem, I designed the <strong>Bulletin Board </strong>feature to allow 
+                teachers to more easily support and motivate students as schools switch to online learning.</em>
+            </p>
+    
+            <img src = "images/gc_finalinterface.jpg" alt = "Cover Pic" class="small"/>
+        </div>
+    
+        <div id="why-gc-background">
+            <h2> WHY GOOGLE CLASSROOM </h2>
+            <div class="why-gc">
+                    <p>
+                        During COVID-19, there were several different online platforms that schools adopted from 
+                        Microsoft Teams to Canvas. So why Google Classroom? Google not only accounts for <strong>60%</strong> of the 
+                        Ed Tech market by supplying schools K-12 with laptops and tablets, but Google Classroom saw 
+                        a growth rate of <strong>135%</strong> during the last 3 months of 2019 in the U.S. alone. With so many students
+                        and teachers depending on this platform as a replacement for the traditional classrooms,
+                        it needs to be better.
+                    </p>
+                <img src = "images/gc_chart.jpg" alt = "Cover Pic" class="small"/>
+            </div>
+        </div>
+    
+        <div id="user-research">
+            <h2>USER RESEARCH</h2>
+            <p>
+                I decided to dive into user research and interviews in order to better discover how different 
+                users interact in Google Classroom, organize their assignments, and stay on top of their 
+                schoolwork. I interviewed five types of users who use Google Classroom on a daily basis.
+            </p>
+        
+            <h3> Students </h3>
+            <ol>
+                <li>
+                    <em>The Student Leader: </em>this user is a highly motivated student with leadership positions at 
+                    school, uses the student and teacher interface of Google Classroom
+                </li>
+        
+                <li>
+                    <em>The Athlete:</em> this user manages a busy class and extracurricular schedule side by 
+                    side on Google Classroom
+                </li>
+        
+                <li>
+                    <em>The Average Student:</em> this user has no commitments outside of the classroom and 
+                    uses Google Classroom for class work purposes only
+                </li>
+            </ol>
+        
+            <h3>Teachers</h3>
+            <ol>
+                <li>
+                    <em>The Experimenter:</em> this user is constantly looking for new ways to make their 
+                    lessons and assignments more engaging to help motivate their students, working with 
+                    platforms outside of Google Classroom
+                </li>
+        
+                <li>
+                    <em>The Average Teacher:</em> this user teaches a wide range of students crossing all 
+                    academic levels including regular classes and extracurriculars, working within the 
+                    constraints of Google Classroom to support students
+                </li>
+            </ol>
+        
+            <h3> Key Findings </h3>
+            <p>
+                During these interviews, I asked users to walk me through a school day before and after the 
+                pandemic, highlighting the key differences in their interactions with Google Classroom. This 
+                is what I learned:
+            </p>
+
+            <img src = "images/gc_keyinsights.jpg" alt = "Cover Pic" class="small"/>
+        </div>
+    
+        <div id="people-problem">
+            <h2> THE PEOPLE PROBLEM </h2>
+            <p>
+                Students want to feel motivated in school and keep up with their coursework but it’s 
+                difficult because:
+            </p>
+        
+            <ol>
+                <li>There are too many posts and assignments to manage in order to stay organized</li>
+                <li>There is a lack of interaction and support between students and teachers</li>
+            </ol>
+        
+            <h3>The Current Solution</h3>
+            <p>
+                Currently, Google Classroom tackles one part of the problem by allowing the user to manage all 
+                of their posts and notifications via the to-do list feature and the assignment stream.
+            </p>
+            <p>
+                However, Google Classroom’s current solution lacks organization. Instead, student organize 
+                their assignments like this:
+            </p>
+
+            <img src = "images/gc_storyboard.jpg" alt = "Cover Pic" class="small"/>
+        
+            <p><em>Pain Points:</em></p>
+            <ol>
+                <li>Older assignments that are due soon get buried under newer ones in the assignment stream, 
+                    causing students to miss them.</li>
+                <li><strong>42%</strong> of users interviewed did not know about the To Do List feature and those who did, did not find it 
+                    useful because assignments were not sorted by day.</li>
+                <li>The assignment stream contains all posts from announcements to assignments, causing comments 
+                    and discussion threads to get lost.</li>
+            </ol>
+        </div>
+    
+        <div id="personas">
+            <h2>PERSONAS</h2>
+            <p>
+                To design for students of diverse backgrounds and uses of Google Classroom, I created personas 
+                to highlight key needs and frustrations of users.
+            </p>
+    
+            <img src = "images/gc_personas.jpg" alt = "Cover Pic" class="image"/>
+        </div>
+    
+        <div id="brainstorming">
+            <h2>BRAINSTORMING</h2>
+            <p>
+                Beginning with various problem spaces, I conducted a brainstorming session to determine the 
+                method to conquer the problem and explore the feasibility and impact of possible solutions.
+            </p>
+
+            <img src = "images/gc_hmw.jpg" alt = "Cover Pic" class="smallest"/>
+        
+            <p>After brainstorming, I decided to narrow down on 3 potential solutions:</p>
+            <ol>
+                <li><strong><em>Bulletin Boards: </em></strong>teachers can group assignments that belong 
+                    together into one notification or assignment post in the assignment stream</li>
+                <li><strong><em>Blocking Notifications: </em></strong>this feature would prevent students from 
+                    receiving notifications at certain times of the day, so students feel less overwhelmed</li>
+                <li><strong><em>Discussion Boards: </em></strong>a place for students to ask questions about 
+                    courses and answer each other’s questions, not mixed in with assignments or focused on 
+                    teacher participation
+                </li>
+            </ol>
+        
+            <p>
+                I decided to move forward with the <strong>Bulletin Board feature</strong> that helps summarize what 
+                important posts students need to focus on so that they don’t get overwhelmed. I also 
+                decided to <em>redesign the layout of the Classwork Tab</em> so that it prioritizes assignments 
+                that are due soon and keeps the assignment stream solely for announcements and materials,
+                thereby creating support.
+            </p>
+        </div>
+    
+        <div id="student-side">
+            <h2>DESIGNING FOR THE STUDENT</h2>
+            <p>
+                I started designing for the student by considering how to make the Classwork Tab easier for 
+                them to use.
+            </p>
+        
+            <h3> Content Type and Hierarchy for the Classwork Tab</h3>
+            <p>
+                I started by exploring three different ways for organizing the assignments — by unit, by 
+                date, and by both date and time.
+            </p>
+
+            <img src = "images/gc_dec1.jpg" alt = "Cover Pic" class="image"/>
+        
+            <p>
+                I decided to move forward with Option C because it best helps students look at assignments in 
+                a way that fits with their schedules. Unlike teachers who plan entire units at a time, 
+                students tend to plan daily or weekly. Although both B and C allow this, <strong>Option C</strong> helps 
+                the student prioritize which assignments need to be done first based on the time of day
+                they are due.
+            </p>
+            <p>
+                <em>
+                    However, as I worked on Option C, I realized there were several other content requirements 
+                    to consider.
+                </em>
+            </p>
+        
+            <p>
+                How do students decide how long an assignment will take? Is the date the assignment was 
+                posted necessary? Should students be able to comment from the Classwork Tab or just from 
+                the assignment page?
+            </p>
+
+            <img src = "images/gc_dec2.jpg" alt = "Cover Pic" class="image"/>
+        
+            <p>
+                After exploring the different content requirements, I decided to include the <strong>assignment 
+                deadline</strong> (both date and time), abbreviated <strong>assignment description</strong>, 
+                <strong>class comments</strong>, and <strong>assignment type</strong>.
+            </p>
+
+            <p>
+                I realized that it is better to focus on assignments that are due within the next 2 
+                days (<strong>Option B</strong>) rather than focusing on an entire week to make sure the content is as 
+                easy to parse through for users who may be overwhelmed by their workload. Students who 
+                want to view assignments farther in the future can click to see more.
+            </p>
+
+            <h3>Viewing the List of Assignments</h3>
+            <p>
+                After determining the content requirements and the best way to sort the content, 
+                I explored 4 different screens for viewing the list of assignments.
+            </p>
+
+            <img src = "images/gc_dec3.jpg" alt = "Cover Pic" class="image"/>
+
+            <p>
+                I eliminated option <strong>C</strong> because users expressed that it was difficult to quickly scan, 
+                because the lines interrupted reading flow. Option <strong>D</strong> caused individual assignments to 
+                take up more space without adding value, hiding the drop-downs at the bottom of the 
+                page, making them less discoverable. Also, users found the numbers in <strong>A</strong> to be 
+                unnecessary and obvious even without labels.
+            </p>
+
+            <p>
+                Thus, I chose <strong>Option B </strong>because it fits with Google Classroom’s usual style and helps
+                the user intuitively figure out what due next. However, I modified it by making the 
+                titles such as “Today” and “Tomorrow” smaller and highlighting missing assignments
+                in red.
+            </p>
+
+            <h3>Adding A Search Bar to the Classwork Tab</h3>
+            <p>
+                I also added a search bar to the top of the page to make it easier for students 
+                to find older assignments.
+            </p>
+
+            <img src = "images/gc_dec4.jpg" alt = "Cover Pic" class="small"/>
+
+            <p>
+                When I designed the Classwork Tab, I initially went with Option <strong>A</strong>. However,
+                I realized one of the biggest cons for sorting by date and time was that 
+                students could not easily look back at previous assignments to check their 
+                grades or feedback.
+            </p>
+
+            <p>
+                To address this, I went with <strong>Option B  </strong>which integrates Google Classroom’s existing 
+                features into the search bar (making them more visible and discoverable) while also 
+                solving this problem.
+            </p>
+
+            <h3>Bulletin Board Entry Points</h3>
+            <p>
+                Once I redesigned the assignment page of the Classwork Tab, I explored 
+                different ways for incorporating the Bulletin Board into the app.
+            </p>
+
+            <img src = "images/gc_dec5.jpg" alt = "Cover Pic" class="image"/>
+
+            <p>
+                I bounced around with different places I could present the Bulletin Board. I 
+                found that <strong>B</strong> was often missed, as the stream is not the opening page a user is 
+                brought to for an individual subject. <strong>D</strong> was not easily discoverable and <strong>E</strong> added
+                an extra step when users scan the Classwork tab to organize their assignments.
+                I chose <strong>Option A and C</strong> because it is immediately visible on pages of the app
+                where students need to reference or interact with it.
+            </p>
+
+            <h3>Which Bulletin Board Is Easiest to Digest Quickly?</h3>
+            <p>
+                Once I chose an entry point, I wanted to make it as easy as possible for 
+                users to quickly access the information within it.
+            </p>
+
+            <img src = "images/gc_dec6.jpg" alt = "Cover Pic" class="image"/>
+
+            <p>
+                I initially created Option <strong>A</strong> but realized that users were not actually reading the
+                text because it looked like too much to go through. I eliminated Option <strong>C</strong> as users
+                pointed out that its allowance of longer text makes it very similar in function
+                to announcements.
+            </p>
+
+            <p>
+                I decided on <strong>Option B</strong> since it’s more organized, separates out information 
+                into easily digestible pieces, and ensures that teachers keep reminders short.
+            </p>
+
+            <h3>Final Prototype for the Student Side</h3>
+            <video height="600" controls>
+                <source src="images/student-side.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="designing-for-the-teacher">
+            <h2>DESIGNING FOR THE TEACHER</h2>
+            <p>
+                I worked on designing for the teacher to allow users to add new links or posts 
+                to the summary at the top of their class page. I also worked on redesigning the 
+                teacher experience for the Classwork Tab.
+            </p>
+
+            <h3>Prioritizing the Classwork Tab</h3>
+            <p>
+                In Google Classroom, when you select a specific class, the first page you see 
+                is the Assignment Stream. Instead, I made the Classwork Tab the primary page 
+                for a single subject as the Classwork Tab contains most of the information that 
+                teachers and students need (assignments) in a more organized form.
+            </p>
+
+            <img src = "images/gc_dec7.jpg" alt = "Cover Pic" class="small"/>
+
+            <p>
+                I also decided to keep the current format for the Classwork Tab (unlike what I did 
+                for the student interface) for teachers since it fits their current practices. From 
+                user research, I learned that most teachers upload all assignments for a unit at once 
+                — hence, viewing the assignments as units would be most helpful for them.
+            </p>
+
+            <h3>Adding Posts to the Bulletin Board</h3>
+            <p>
+                I wanted to make it quick and intuitive for teachers to add a new link or 
+                reminder. I tested 3 explorations.
+            </p>
+
+            <img src = "images/gc_dec8.jpg" alt = "Cover Pic" class="small"/>
+
+            <p>
+                I eliminated Option <strong>A</strong>, because even though it fits with Google Classroom’s visual 
+                style, it de-emphasizes the main “Add” menu button on the bottom right. Option <strong>C</strong> 
+                confused users as they did not associate posts with the Bulletin Board with those 
+                that go in the main stream. I decided to go with <strong>Option B</strong> since users found it 
+                easiest to understand.
+            </p>
+
+            <p>
+                Once the user clicks to create a post, I used Google Classroom’s existing templates
+                for creating a new announcement/assignment/poll to create a reminder or add a 
+                link so it fits with the visual style.
+            </p>
+
+            <h3>Considering the Edge Cases</h3>
+            <p>I considered 2 edge cases involved with creating a new post.</p>
+
+            <img src = "images/gc_dec9.jpg" alt = "Cover Pic" class="image"/>
+
+            <p>
+                I started by considering how to handle the case when there is a reminder on the Bulletin 
+                Board that has text that does not fit in the preview.
+            </p>
+
+            <p>
+                When entering the information while creating a post, after a certain character count 
+                the content gets cut-off. However, this character count allows the user to input more 
+                information than what fits the preview.
+            </p>
+
+            <p>
+                I eliminated Option <strong>B</strong> since it can be time-consuming for a user to click 
+                through multiple posts that might be long. Option <strong>C</strong> provides too much
+                information for a user who only wants to see the reminders and not both 
+                reminders and links. I decided to go with <strong>Option A</strong> since it saves time by 
+                providing more information but does not overwhelm the user.
+            </p>
+
+            <p>
+                I also considered the edge case where a user might add several posts to the Bulletin Board.
+            </p>
+
+            <img src = "images/gc_dec10.jpg" alt = "Cover Pic" class="smallest"/>
+
+            <p>
+                In this case, I decided to limit the total number of reminders and links allowed to
+                be 4. This ensures that a student user can easily see all of the reminders and 
+                links in the Bulletin Board without having to scroll horizontally, making it easier
+                for a student to quickly read and ensuring that the Bulletin Board doesn’t get 
+                cluttered, thus defeating its purpose. If a teacher would like to create a new 
+                post and have reached the maximum, they must either delete a post or edit an existing one.
+            </p>
+
+            <h3>Final Prototype For the Teacher Side</h3>
+            <video height="600" controls>
+                <source src="images/teacher-side.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="conclusion">
+            <h2>CONCLUSION</h2>
+            <p>
+                In the midst of the pandemic, our lives completely shifted to a virtual world 
+                and there were several problems that came with that. It was empowering to be 
+                able to use design to be able to solve a relevant problem during this time that
+                so many students and teachers are struggling with.
+            </p>
+
+            <p>
+                I learned that design is not always linear — I often had to go back a couple 
+                steps to make sure I considered all of the different possible cases and learned 
+                how important it is to engage with the user throughout the process.
+            </p>
+
+            <p>
+                If I were to continue this case study, I would tackle these next:
+            </p>
+
+            <ol>
+                <li>
+                    How might we integrate reminders into the announcement stream to function as 
+                    more “urgent” announcements?
+                </li>
+                <li>
+                    How might we bring some of the elements from the new Classwork Tab into the 
+                    To-Do List feature to make it easier for students to use?
+                </li>
+            </ol>
+        </div>
     </div>
-
-    <p> This last summer, like millions of other students across the globe, my school was rapidly forced to adapt to virtual environments due to COVID-19. For my younger sister and many of the other students I tutor, Google Classroom replaced a traditional classroom and became the primary form of communication between teachers and students. </p>
-
-    <p> Google Classroom allows students to organize their assignments for class by keeping track of due dates, overall completion, grades, and feedback. However, it is difficult to use because: </p>
-    <ol>
-        <li> The assignment stream is cluttered. </li>
-        <li> It is tedious to coordinate assignment organization across multiple platforms. </li>
-    </ol>
-
-    <div class="study_headings">
-        <h2> Understanding Why The Assignment Stream Doesn’t Work </h2>
     </div>
-
-    <p> Going into this, my original hypothesis was: Since the Google Classroom classwork tab helps keep assignments organized by topic, students will easily be able to organize assignments. Instead, students need a better way to keep track of grades and feedback across all of their classes. </p>
-
-    <h3> User Research </h3>
-    <p> Interviewing 7 high school students whose classroom interactions have been primarily through Google Classroom during COVID - 19, I reached three key insights: </p>
-    <ol>
-        <li> Schools use platforms outside of Google Classroom such as Genesis to keep track of grades and feedback. Only 29% of interviewees felt they would use the same features if adapted to Google Classroom. </li>
-        <li> 86% of students find it tedious to search for assignments in the assignment stream (“It's annoying that assignments that are due soon get buried between assignments that were posted recently.”) </li>
-        <li> Users don’t always like the way teachers organize assignments in the classwork tab or the Google Classroom to-do list and often reorganize their assignments in a personal planner or excel sheet </li>
-    </ol>
-
-    <h3> Market Research </h3>
-    <p> Google Classroom is unique in that it provides students with a to-do list feature in addition to a calendar feature that allows users to visualize their assignments in both checklist format and as a visual schedule. Unlike other products though, Google Classroom does not organize its assignment stream into modules or by date. </p>
-
-    <div class="study_headings">
-        <h2> Users Want to Personalize Their Google Classroom </h2>
-    </div>
-    <p> Users like to organize their assignments in several different ways. Some like to color code, plan by day, prioritize, estimate completion times, set multiple reminders, and add notes. The current Google Classroom format does not allow for this type of personalization. Teachers and Google Classroom have preset organizational patterns that users must adopt. </p>
-
-    <div class="study_headings">
-        <h2> Finding Feature Spaces </h2>
-    </div>
-
-    <p> After brainstorming, we identified two key opportunities: </p>
-    <ol>
-        <li> How might we integrate assignment organization across multiple subjects? </li>
-        <li> How might we personalize the assignment stream based on the user’s needs? </li>
-    </ol>
-
-    <div class="study_headings">
-        <h2> Solution Spaces </h2>
-    </div>
-    <p> After analyzing the feasibility and impact of the solutions from the brainstorming session, I drew some initial flows. Each flow shows a potential feature and how the user might interact with the feature. </p>
-    <h3> Solution 1: Grading Tab: </h3>
-    <p> The grading tab allow users to see a summary of their grades, assignments, and feedback from teachers all in one place. </p>
-
-    <h3> Solution 2: Assignment Breakdown </h3>
-    <p> The assignment breakdown feature allows users to plan their assignments by accessing a few tools such as setting alerts and prioritizing tasks. </p>
-    <h3> Solution 3: Workspaces </h3>
-    <p> Workspaces allow users to group and sort assignments across all of their classes. </p>
-
-    <div class="study_headings">
-        <h2> Picking A Solution </h2>
-    </div>
-    <h3> Initial Approach </h3>
-    <p> I spent my first iteration discovering ways in which users could integrate assignments across classes by grouping them together into workspaces. To test my approach, I designed a prototype. </p>
-    <figure>
-        <img src = "images/pro1.png"
-        alt = "Workspaces" >
-        <!-- Source: (original work) Ishika Agrawal -->
-        <img src = "images/pro2.png"
-        alt = "Workspaces" >
-        <!-- Source: (original work) Ishika Agrawal -->
-    </figure>
-    <p> What I found is that users faced some of the same challenges in using the prototype as they did in using the class stream. Users did not like scrolling through their stream to find assignments and announcements to add to their workspace folder. Users also felt that this was not a tool they could use daily since it required more time to create than simply using a planner and was instead something they might reserve for large projects. </p>
-    <p> Instead of finding ways of integrating assignment organization across classes, I decided to focus on making it as convenient as possible to organize assignments within one class and making it easier to use the assignment stream. </p>
-
-    <h3> Final Approach </h3>
-    <p> Users already have strong preferences for how they like to organize their assignments outside of Google Classroom. I decided to help personalize the assignment stream by creating a tool that allows users to access those same features within the Google Classroom platform. </p>
-    <p> Initially, I created the Assignment Breakdown feature which allows students to color code assignments, prioritize, make personal notes, add tags, and set reminders within each individual assignment. However, most users do not spend much time on the individual assignment page and primarily use it for submitting assignments. </p>
-    <p> From the initial workspace testing design, users liked the idea of organizing their assignment in different ways such as by due date and by isolating assignments and announcements. To incorporate this in the assignment stream tab, I created a filter tool that allows users to filter by pre-set categories or based on what settings they decide to use in the Assignment Breakdown tool. </p>
-    <figure>
-        <img src = "images/final1.png"
-        alt = "Assignment Breakdown Feature" >
-        <!-- Source: (original work) Ishika Agrawal -->
-        <img src = "images/final2.png"
-        alt = "Assignment Breakdown Feature" >
-        <!-- Source: (original work) Ishika Agrawal -->
-    </figure>
-</div>
-</main>
-
-<footer> If you're looking to connect, feel free to email me at ia83@cornell.edu. </footer>
-
-
 </body>
 
 </html>
