@@ -7,6 +7,23 @@ video {
     margin: 0 auto;
 }
 
+.description h4 {
+    padding-top: 9px;
+}
+
+.google ul li {
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    /* max-width: 950px; */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    line-height: 1.7em;
+    margin-bottom: 1em;
+    color: black;
+    font-style: normal;
+}
+
 body {
   background-color: white;
   margin: auto;
