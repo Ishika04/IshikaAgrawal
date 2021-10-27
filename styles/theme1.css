@@ -1,0 +1,120 @@
+/* Header Styling */
+.case-study .header img {
+    width: 100%;
+}
+
+
+.case-study p {
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 950px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    line-height: 1.7em;
+    margin-bottom: 1em;
+}
+
+.case-study ol li {
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 950px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    line-height: 1.7em;
+}
+
+.case-study h3 {
+    max-width: 950px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;  
+    line-height: 1.7em;
+}
+
+.case-study h1 {
+    max-width: 950px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;  
+    line-height: 1.7em;
+    text-align: center;
+}
+
+.case-study h2 {
+    padding-top: 40px;
+    max-width: 950px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;  
+    line-height: 1.7em;
+    color: #1866D3;
+}
+
+.case-study article img {
+    max-width: 100%;
+    align-items: center;
+}
+
+.case-study .why-gc {
+    display: flex;
+    flex-direction: row;
+    max-width: 950px;
+    align-items: center;
+    margin: auto; 
+    padding-top: 20px;
+}
+
+.case-study .why-gc img {
+    align-self: center;
+}
+
+.case-study .small {
+    max-width: 950px;
+    display: block;
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;  
+}
+
+.case-study .smallest {
+    max-width: 650px;
+    display: block;
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;  
+}
+
+@media screen and (max-width: 950px) {
+    .case-study .small {
+        max-width: 100%;
+        display: block;
+        /* justify-content: center; */
+        align-items: center;
+        margin: auto;  
+    }
+    
+    .case-study .smallest {
+        max-width: 100%;
+        display: block;
+        /* justify-content: center; */
+        align-items: center;
+        margin: auto;  
+    }
+
+    .case-study .why-gc {
+        display: flex;
+        flex-direction: column;
+        max-width: 950px;
+        align-items: center;
+        margin: auto; 
+        padding-top: 20px;
+    }
+
+    .case-study article {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
