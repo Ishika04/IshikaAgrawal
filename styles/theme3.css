@@ -1514,6 +1514,11 @@ header img {
     margin: auto;
 }
 
+.pavvilion #home-page ul li {
+    max-width: 550px;
+    margin: auto;
+}
+
 .pavvilion #home-page h2 {
     max-width: 550px;
     margin: auto;
@@ -1536,6 +1541,11 @@ header img {
     margin: auto;
 }
 
+.pavvilion #profile-page ul li {
+    max-width: 550px;
+    margin: auto;
+}
+
 .pavvilion #profile-page h2 {
     max-width: 550px;
     margin: auto;
@@ -1554,6 +1564,11 @@ header img {
 }
 
 .pavvilion #login-sequence ol li {
+    max-width: 550px;
+    margin: auto;
+}
+
+.pavvilion #login-sequence ul li {
     max-width: 550px;
     margin: auto;
 }
@@ -1598,6 +1613,12 @@ header img {
 #conclusion p {
     max-width: 550px;
     margin: auto;
+}
+
+#conclusion h3 {
+    max-width: 550px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 1050px) {
